@@ -1,0 +1,7 @@
+#imgStyle {
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px;
+  height: 180px;
+  border-radius: 5%;
+}
