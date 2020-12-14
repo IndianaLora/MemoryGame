@@ -1,7 +1,14 @@
 #imgStyle {
-  display: flex;
+  display: block;
   flex-wrap: wrap;
   width: 150px;
   height: 180px;
   border-radius: 5%;
+}
+.board {
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 10px;
+  justify-content: center;
 }
