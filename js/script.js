@@ -12,15 +12,16 @@ var cards = [
 
 var board = document.getElementById("board");
 
-function boardx() {
+function createBoard() {
   for (let i = 0; i < cards.length; i++) {
     var img = document.createElement("img");
     img.src = "img/front.jpg";
     img.id = "imgStyle";
-    img.addEventListener("click", function (event) {
-      event.target.src = "img/pieza.jpg";
-    });
+    img.addEventListener("click", flipCard);
     board.appendChild(img);
   }
 }
-boardx();
+function flipCard(event) {
+  event.target.src = "img/pieza.jpg";
+}
+createBoard();
