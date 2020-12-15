@@ -18,7 +18,7 @@ function boardx() {
     img.src = "img/front.jpg";
     img.id = "imgStyle";
     img.addEventListener("click", function (event) {
-      this.src = "img/pieza.jpg";
+      event.target.src = "img/pieza.jpg";
     });
     board.appendChild(img);
   }
